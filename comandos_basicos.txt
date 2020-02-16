@@ -1,0 +1,11 @@
+# Comandos basicos
+git init # Para empezara trabajar en el repositosio en el cual estamos ubicados.
+
+git config --global user.name "Nombre del usuario" # Para ingresar el nombre de usuario que va a trabajar en un equipo
+git config --global user.email "correo electronico" # Para poner el correo electronico de ese usuario
+
+git commit -m "first commit" # parar de agregar del area temporal a repositorio local 
+git remote add origin https://github.com/camaviga11/cursoGit.git # Enlazar con el repositorio de GitHub 
+git push -u origin master #Subir los archivos al repositorio, esto se hace uno vez
+
+
