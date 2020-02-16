@@ -30,3 +30,51 @@ git remote add origin https://github.com/camaviga11/cursoGit.git # Enlazar con e
 git push -u origin master #Subir los archivos al repositorio, esto se hace uno vez
 
 
+#Crear etiquetas tags versiones de un programa
+git tag -a <version1.0> -m "mensaje"
+git tag <nombre del tag> <numero identificador del commit>
+
+#ver la lista de tags
+git tag -l
+
+#eliminar un tag
+git tag -d <nombre del tag>
+
+#renombrar un tag
+git tag -f -a <Nombre de la version> -m "mensaje" <identidficador del commit 3404cf2>
+
+
+#Ver el listado de commits y los identificadores
+git log
+
+#Ver la lista de identificadores mas resumida
+git log --oneline
+
+#Ver la lista de identificadores mas resumida y graficos
+git log --oneline --graph
+
+#ver el numero de commits que quiero ver con log
+git log -<numero de commits que quiero ver>
+git log --oneline -<numero de commits que quiero ver>
+
+#ver diferencias entre el el ultimo commit y el estado actual den steging area
+git diff <identificador del commit>
+
+#Ver diferencias entre commits
+git diff <identificador de comits> <Identificador del commit>
+
+# Quita el archivo especificado del staging area
+git reset <nombre del archivo>
+
+# Resetear un commit a partir del identificador que especifiquemos, no elimina los arcchivos los deja en el staging area
+git reset --soft <identificador de comits>
+
+# Restaura el commit a partir del identificador que especifiquemos, no elimina los arcchivos los deja en el working directory
+git reset --mixed <identificador de commid>
+
+# Borra los archivos del computador, se mueve en el tiempo si tienes las lista de los HASH
+git reset --hard
+
+# Configurar otro editor
+git config --global core.editor "atom --wait"
+
