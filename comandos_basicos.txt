@@ -10,11 +10,20 @@ git init <Nombre de la carpeta> #Crea una carpeta e inicia Git en esa carpeta
 git status
 
 #Pasar del working directory al staging area
-git add <nombre del archivo>
+git add <nombre del archivo> # Agrega solo el arcchivo que especificamos
 git add . # Sube todos los archivos que esten pendientes por seguir 
+git add -A # Sube todos los archivos que esten pendientes por seguir
+
+# Borrar archivos
+git restore --staged <nombre del archivo> borra los arcchivos del staging area
+git rm -f <nombre del archivo> borra los archivos del computador
+
 
 git config --global user.name "Nombre del usuario" # Para ingresar el nombre de usuario que va a trabajar en un equipo
 git config --global user.email "correo electronico" # Para poner el correo electronico de ese usuario
+
+# Editar un commit 
+git commit --amend -m "mensaje" # editar un commit anterior y su mensaje
 
 git commit -m "first commit" # parar de agregar del area temporal a repositorio local 
 git remote add origin https://github.com/camaviga11/cursoGit.git # Enlazar con el repositorio de GitHub 
