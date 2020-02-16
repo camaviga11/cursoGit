@@ -1,5 +1,17 @@
-# Comandos basicos
-git init # Para empezara trabajar en el repositosio en el cual estamos ubicados.
+
+*******************
+| Comandos basicos|
+*******************
+# Para empezara trabajar en el repositosio en el cual estamos ubicados.
+git init # Inicia Git en el repositorio donde estas parado
+git init <Nombre de la carpeta> #Crea una carpeta e inicia Git en esa carpeta
+
+# ver el estado de los archivos en git
+git status
+
+#Pasar del working directory al staging area
+git add <nombre del archivo>
+git add . # Sube todos los archivos que esten pendientes por seguir 
 
 git config --global user.name "Nombre del usuario" # Para ingresar el nombre de usuario que va a trabajar en un equipo
 git config --global user.email "correo electronico" # Para poner el correo electronico de ese usuario
