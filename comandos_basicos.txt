@@ -78,3 +78,30 @@ git reset --hard
 # Configurar otro editor
 git config --global core.editor "atom --wait"
 
+ -------
+| Ramas |
+ -------
+
+# Crea una rama
+git branch <Nombre de la rama>
+
+# Listar las ramas
+git branch -l
+
+#eliminar rama
+git branch -d <nombre de la rama>
+
+#Forzar borrado de rama 
+git branch -D <nombre de la rama>
+
+# Renombrar rama
+git branch -m <Nombre de la rama> <Nombre de la rama>
+
+# moverse entre ramas
+git checkout <Nombre de la rama>
+
+# Moverse entre identificadores de commits
+git checkout <identificador del commit>
+
+# Crear la rama y moverse en ella
+git checkout -b <Nombre de la rama>  
