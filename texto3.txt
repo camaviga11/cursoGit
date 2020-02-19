@@ -1,1 +1,3 @@
-este es un archivo que no deberia generar conflictos al fusonar
+este es un archivo que no deberia generar conflictos al fusonar.
+
+es un aprueba para entender
