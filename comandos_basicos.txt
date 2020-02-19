@@ -105,8 +105,7 @@ git checkout <identificador del commit>
 git checkout -b <Nombre de la rama>
 
 YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+|||||||||||||||||||||||||||||||||
 
 # Forzar el paso de una rama a otra, esto puede hacer borrar archivos
 git checkout -b <Nombre de la rama>
@@ -116,3 +115,40 @@ git checkout -b <Nombre de la rama>
  ---------------------
 # Mezclar ramas, debe estar para en la rama con el que quiero que se fusione, osea la rama que va a quedar
 git merge <nombre rama que quiero fusionar con la rama master, la rama que va a desaparecer>
+
+# Evitar bifurcaciones en la linea de diseño
+git rebase <Nombre de la rama que voy a fusionar>
+
+# Evitar bifurcaciones en la linea de diseño interactivamente
+git rebase -i <Nombre de la rama que voy a fusionar>
+
+#guardar cambios temporales para no tener que hacer commits si voy a trabajar en otra rama
+git stash
+
+#mostrar la lista de stash
+git stash list
+
+# eliminar stash
+git stash drop stash@{?}
+
+# Aplicar cambios al ultimo stash que cree
+git stash apply
+
+# Aplicar cambios en un stash
+git stash apply stash@{?}
+
+# Sacar un  cambio de una rama y moverla a otra
+git cherry-pick <Identificador del commit que quiero traer a la rama actual>
+
+ ......
+|gitHub|
+ ......
+
+#enlazar el repositorio con gitHub
+git remote add <origin> <direccion del repositorio de giHhub>
+
+#ver si el repositorio esta enlazado
+git remote -v
+
+#remover el enlace del repositorio
+git remote remove <origin>
