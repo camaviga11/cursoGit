@@ -1,4 +1,4 @@
-
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 *******************
 | Comandos basicos|
 *******************
@@ -78,6 +78,7 @@ git reset --hard
 # Configurar otro editor
 git config --global core.editor "atom --wait"
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
  -------
 | Ramas |
  -------
@@ -104,4 +105,8 @@ git checkout <Nombre de la rama>
 git checkout <identificador del commit>
 
 # Crear la rama y moverse en ella
-git checkout -b <Nombre de la rama>  
+git checkout -b <Nombre de la rama>
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  
