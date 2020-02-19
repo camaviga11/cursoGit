@@ -1,0 +1,3 @@
+Esto es una prueba para trabajar con varias ramas, editado 20:33 18/02/20.
+
+Ocurrio algo extraño, se me borro el archivo BORRAR.txt de la rama master y rapaPrueba.
