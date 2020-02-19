@@ -1,9 +1,11 @@
 *******************
 | Comandos basicos|
-*******************
+-------------------
 # Para empezara trabajar en el repositosio en el cual estamos ubicados.
-git init # Inicia Git en el repositorio donde estas parado
-git init <Nombre de la carpeta> #Crea una carpeta e inicia Git en esa carpeta
+git init
+
+#Crea una carpeta e inicia Git en esa carpeta 
+git init <Nombre de la carpeta> 
 
 # ver el estado de los archivos en git
 git status
@@ -28,7 +30,6 @@ git commit -m "first commit" # parar de agregar del area temporal a repositorio 
 git remote add origin https://github.com/camaviga11/cursoGit.git # Enlazar con el repositorio de GitHub 
 git push -u origin master #Subir los archivos al repositorio, esto se hace uno vez
 
-
 #Crear etiquetas tags versiones de un programa
 git tag -a <version1.0> -m "mensaje"
 git tag <nombre del tag> <numero identificador del commit>
@@ -41,7 +42,6 @@ git tag -d <nombre del tag>
 
 #renombrar un tag
 git tag -f -a <Nombre de la version> -m "mensaje" <identidficador del commit 3404cf2>
-
 
 #Ver el listado de commits y los identificadores
 git log
@@ -107,5 +107,12 @@ git checkout -b <Nombre de la rama>
 YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  
+
+# Forzar el paso de una rama a otra, esto puede hacer borrar archivos
+git checkout -b <Nombre de la rama>
+
+ +++++++++++++++++++++
+| Trabajo entre ramas |
+ ---------------------
+# Mezclar ramas, debe estar para en la rama con el que quiero que se fusione, osea la rama que va a quedar
+git merge <nombre rama que quiero fusionar con la rama master, la rama que va a desaparecer>
