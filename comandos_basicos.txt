@@ -106,6 +106,9 @@ git checkout <identificador del commit>
 # Crear la rama y moverse en ella
 git checkout -b <Nombre de la rama>
 
+# Forzar el paso de una rama a otra, esto puede hacer borrar archivos
+git checkout -b <Nombre de la rama>
+
  ---------------------
 | Trabajo entre ramas |
  ---------------------
