@@ -1,10 +1,12 @@
 
-*******************
+...................
 | Comandos basicos|
-*******************
+-------------------
 # Para empezara trabajar en el repositosio en el cual estamos ubicados.
-git init # Inicia Git en el repositorio donde estas parado
-git init <Nombre de la carpeta> #Crea una carpeta e inicia Git en esa carpeta
+git init
+
+#Crea una carpeta e inicia Git en esa carpeta 
+git init <Nombre de la carpeta> 
 
 # ver el estado de los archivos en git
 git status
@@ -109,7 +111,7 @@ git checkout -b <Nombre de la rama>
 # Forzar el paso de una rama a otra, esto puede hacer borrar archivos
 git checkout -b <Nombre de la rama>
 
- ---------------------
+ +++++++++++++++++++++
 | Trabajo entre ramas |
  ---------------------
 # Mezclar ramas, debe estar para en la rama con el que quiero que se fusione, osea la rama que va a quedar
