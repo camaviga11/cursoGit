@@ -152,3 +152,20 @@ git remote -v
 
 #remover el enlace del repositorio
 git remote remove <origin>
+
+#camino 1
+#Trear los cambios del repositorio remoto
+git fetch <origin> <nombre de la rama "master">
+
+#si aparece un error "refusing to merge unrelated histories"
+git merge <ruta de la rama descargada>
+
+#camino 2
+#Trear los cambios del repositorio remoto
+git pull origin master
+
+#subir cambios al repositorio remoto
+git push <origin> <a la rama que quiero subir el cambio "master">
+
+#enviar los tags 
+git push <origin> <a la rama que quiero subir el cambio "master"> --tags 
